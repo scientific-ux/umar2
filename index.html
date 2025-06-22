@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeica Jewelry & Watches</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Jeica Jewelry $ Watches</h1>
+        <p>Welcome to JJW where elegance meets affordability.</p>
+        <div class="cart-button" onclick="togglecart()">
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+    <main class="products">
+        <div class="prodict-grid">
+            <div class="product-card">
+                <img src="images/JWU V.1 MEN.png" alt="watch">
+                <h3>watch 1</h3>
+                <p class="price">UGX 1500</p>
+                <button onclick="addToCart('watch 1', 1500)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/JWU V7.png" alt="watch">
+                <h3>watch 2</h3>
+                <p class="price">UGX 1700</p>
+                <button onclick="addToCart('watch 2', 1700)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/JMU A.A.png" alt="watch">
+                <h3>watch 3</h3>
+                <p class="price">UGX 2000</p>
+                <button onclick="addToCart('watch 3', 2000)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <!--Cart Sidebar-->
+    <div class="Sidebar" id="Sidebar">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-total"Total: UGX <span id="cart-total">0</span></div>
+        <button onclick="toggleCart()">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
